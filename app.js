@@ -56,6 +56,12 @@ function calculateResults() {
 
 //showError
 function showError(error) {
+    //hide results and hide loader added last.
+    //Hide results
+    document.getElementById('results').style.display = 'none';
+
+    //Hide loader
+    document.getElementById('loading').style.display = 'none';
 
     //Creae a div
     const errorDiv = document.createElement('div');
